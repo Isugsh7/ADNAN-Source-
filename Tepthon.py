@@ -401,7 +401,7 @@ async def _(event):
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=".مطور"))
 async def _(event):
-      await event.reply("""سنترال : @PP6ZZ"""
+      await event.reply(""" ADNAN : @PP6ZZ"""
 )
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=".حلويات"))
