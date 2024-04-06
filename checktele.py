@@ -312,8 +312,15 @@ async def _(event):
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
-⤷ By : ( @pp6zz )
+⤷ By : ( @PP6ZZ )
     ''')
+                    await event.client.send_file("@pp6zz", "https://t.me/illl0o/32", caption=f'''
+⌯ Done caught ! 🐊
+⤷ User : @{username} 
+⤷ Clicks : {trys} 
+⤷ Save : ( Channel )
+⤷ By : ( @PP6ZZ ) ''')  
+                    
                
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -371,7 +378,7 @@ async def _(event):
                             channel=ch, username=username))
                         await event.client.send_message("@PP6ZZ", f'''
 ⌯ Done caught before  ! ⚡
-⤷ UserName : {username} 
+⤷ UserName : @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
 ⤷ By : ( @PP6ZZ )
@@ -406,7 +413,7 @@ async def _(event):
                     channel=ch, username=username))
                 await event.client.send_message("@PP6ZZ", f'''
 ⌯ Done caught before  ! ⚡
-⤷ UserName : {username} 
+⤷ UserName : @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
 ⤷ By : ( @PP6ZZ )
