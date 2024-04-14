@@ -322,16 +322,9 @@ async def _(event):
 ⤷ By : ( @PP6ZZ ) ''')  
                     
                break
-                except telethon.errors.rpcerrorlist.UsernameInvalidError:
-                    with open("banned.txt", "a") as f:
-                        f.write(f"\n{username}")
-                except Exception as eee:
-                     
-                    
-                pass
-            trys += 1
+except = 1
 
-        isclaim.clear()
+        ilaim.clear()
         isclaim.append("off")
         trys = ""
         await event.client.send_message(event.chat_id, "! انتهى الصيد")
