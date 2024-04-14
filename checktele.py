@@ -323,7 +323,7 @@ async def _(event):
                     
                
                     
-                
+                pass
             trys += 1
 
         isclaim.clear()
