@@ -322,20 +322,8 @@ async def _(event):
 ⤷ By : ( @PP6ZZ ) ''')  
                     
                
-                    break
-                except telethon.errors.rpcerrorlist.UsernameInvalidError:
-                    with open("banned.txt", "a") as f:
-                        f.write(f"\n{username}")
-                except Exception as eee:
-                    await Tepthon.send_message(event.chat_id, f'''خطأ مع {username}
-    الخطأ :
-    {str(eee)}''')
-                    if "A wait of" in str(eee):
-                        break
-                    else:
-                        await Tepthon.send_message(event.chat.id, " اجاك متاح !")
-            else:
-                pass
+                    
+                
             trys += 1
 
         isclaim.clear()
