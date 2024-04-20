@@ -267,20 +267,23 @@ async def _(event):
             if "Available" in isav:
                 await asyncio.sleep(1)
                 try:
-                    await Tepthon(functions.channels.UpdateUsernameRequest(
+                    await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_message( '@PP6ZZ', event.chat_id, f'''
-ADNAN CHECKER
-User : @{username}        
-Channel / @r6r6rr
-@PP6ZZ
+                    await event.client.send_file(event.chat_id, "https://t.me/vgyhjhh/2", caption=f'''
+⌯ Done caught ! 🐊
+⤷ User : @{username} 
+⤷ Clicks : {trys} 
+⤷ Save : ( Channel )
+⤷ By : ( @PP6ZZ )  
     ''')
-                    await event.client.send_message(event.chat_id, f'''
-ADNAN CHECKER
-User : @{username}        
-Channel / @r6r6rr
-@PP6ZZ
-    ''')
+                    await sython(functions.channels.UpdateUsernameRequest(
+                        channel=ch, username=username))
+                    await event.client.send_file("@PP6ZZ", "https://t.me/vgyhjhh/2", caption=f'''
+⌯ Done caught ! 🐊
+⤷ User : @{username} 
+⤷ Clicks : {trys} 
+⤷ Save : ( Channel )
+⤷ By : ( @PP6ZZ ) ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
