@@ -267,7 +267,7 @@ async def _(event):
             if "Available" in isav:
                 await asyncio.sleep(1)
                 try:
-                    await sython(functions.channels.UpdateUsernameRequest(
+                    await (functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_file(event.chat_id, "https://t.me/vgyhjhh/2", caption=f'''
 ⌯ Done caught ! 🐊
@@ -276,7 +276,7 @@ async def _(event):
 ⤷ Save : ( Channel )
 ⤷ By : ( @PP6ZZ )  
     ''')
-                    await sython(functions.channels.UpdateUsernameRequest(
+                    await (functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_file("@PP6ZZ", "https://t.me/vgyhjhh/2", caption=f'''
 ⌯ Done caught ! 🐊
