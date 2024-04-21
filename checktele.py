@@ -305,7 +305,7 @@ async def _(event):
             if "Available" in isav:
                 await asyncio.sleep(1)
                 try:
-                    
+                    await Tepthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_file(event.chat_id, "https://t.me/vgyhjhh/2", caption=f'''
 ⌯ Done caught ! 🐊
@@ -327,7 +327,8 @@ async def _(event):
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    
+                    await Tepthon.send_message(event.chat_id, f'''خطأ مع {username}
+    الخطأ :
     {str(eee)}''')
                     if "A wait of" in str(eee):
                         break
