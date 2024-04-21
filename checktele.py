@@ -267,7 +267,7 @@ async def _(event):
             if "Available" in isav:
                 await asyncio.sleep(1)
                 try:
-                    await (functions.channels.UpdateUsernameRequest(
+                    await Tepthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_file(event.chat_id, "https://t.me/vgyhjhh/2", caption=f'''
 ⌯ Done caught ! 🐊
