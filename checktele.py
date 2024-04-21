@@ -307,13 +307,22 @@ async def _(event):
                 try:
                     await Tepthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/32", caption=f'''
+                    await event.client.send_file(event.chat_id, "https://t.me/vgyhjhh/2", caption=f'''
 ⌯ Done caught ! 🐊
 ⤷ User : @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
-⤷ By : ( @pp6zz )
+⤷ By : ( @ayaa77_12 )  
     ''')
+                    await (functions.channels.UpdateUsernameRequest(
+                        channel=ch, username=username))
+                    await event.client.send_file("@PP6ZZ", "https://t.me/vgyhjhh/2", caption=f'''
+⌯ Done caught ! 🐊
+⤷ User : @{username} 
+⤷ Clicks : {trys} 
+⤷ Save : ( Channel )
+⤷ By : ( @ayaa77_12 ) ''')
+                    
                
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
