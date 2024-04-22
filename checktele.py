@@ -17,10 +17,10 @@ from threading import Thread
 a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
-x ='ertuiowaszxcvnm'
-c ='mnvcxzaswertuio'
-s ='wertuioaszxcvbnm'
-v ='x'
+x = 'ertuiowaszxcvnm'
+c = 'mnvcxzaswertuio'
+s = 'wertuioaszxcvbnm'
+v = 'x'
 banned = []
 isclaim = ["off"]
 isauto = ["off"]
