@@ -333,7 +333,8 @@ async def _(event):
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
 ⤷ By : ( @PP6ZZ )  
-    '''
+    ''') 
+                                                 
                     await event.client.send_file("@PP6ZZ", "https://t.me/vgyhjhh/2", caption=f'''
 ⌯ Done caught ! 🐊
 ⤷ User : @{username} 
