@@ -17,10 +17,7 @@ from threading import Thread
 a = 'qwertyuiopassdfghjklzxcvbnm'
 b = '1234567890'
 e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
-x = 'ertuiowaszxcvnm'
-c = 'mnvcxzaswertuio'
-s = 'wertuioaszxcvbnm'
-v = 'x'
+
 banned = []
 isclaim = ["off"]
 isauto = ["off"]
@@ -252,88 +249,24 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "14":
-        c = random.choices(a)
-        d = random.choices(e)
-        s = random.choices(e)
-        f = [c[0], c[0], c[0], s[0], d[0]]    
+    if choice == "4":
+        c = random.choices(b)
+        d = random.choices(b)
+        s = random.choices(b)
+        k = random.choices(b)
+        f = [c[0], d[0], s[0],k[0]]
+        random.shuffle(f)
         username = ''.join(f)
+        username = 'vip'+username
         if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(a)
-            s = random.choices(e)
-            f = [c[0], c[0], c[0], s[0], d[0]]    
+            c = random.choices(b)
+            d = random.choices(b)
+            s = random.choices(b)
+            k = random.choices(b)
+            f = [c[0], d[0], s[0],k[0]]
+            random.shuffle(f)
             username = ''.join(f)
-        else:
-            pass
-    if choice == "15":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(s)
-        f = [c[0], c[0], d[0], s[0], s[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(x)
-            d = random.choices(c)
-            s = random.choices(s)
-            f = [c[0], c[0], d[0], s[0], s[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "16":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(s)
-        f = [c[0], d[0], s[0], s[0], s[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(c)
-            d = random.choices(s)
-            s = random.choices(x)
-            f = [c[0], d[0], s[0], s[0], s[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "17":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(v)
-        f = [c[0], d[0], s[0], s[0], s[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(x)
-            d = random.choices(c)
-            s = random.choices(v)
-            f = [c[0], d[0], s[0], s[0], s[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "18":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(v)
-        f = [s[0], s[0], s[0], d[0], c[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(x)
-            d = random.choices(c)
-            s = random.choices(v)
-            f = [s[0], s[0], s[0], d[0], c[0]]    
-            username = ''.join(f)
-        else:
-            pass
-    if choice == "19":
-        c = random.choices(x)
-        d = random.choices(c)
-        s = random.choices(v)
-        f = [s[0], v[0], v[0], v[0], c[0]]    
-        username = ''.join(f)
-        if username in banned[0]:
-            c = random.choices(x)
-            d = random.choices(c)
-            s = random.choices(v)
-            f = [s[0], v[0], v[0], v[0], c[0]]    
-            username = ''.join(f)
+            username = 'vip'+username
         else:
             pass
     return username
@@ -409,6 +342,7 @@ async def _(event):
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
 ⤷ By : ( @PP6ZZ ) ''')
+
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
