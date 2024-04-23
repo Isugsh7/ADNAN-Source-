@@ -1,4 +1,4 @@
-pylint:disable=E0001
+#pylint:disable=E0001
 import random
 import threading
 import asyncio
