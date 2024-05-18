@@ -376,7 +376,6 @@ async def _(event):
                     await event.edit("لايوجد صيد شغال !")
                 else:
                     
-            else:
                 pass
         for i in range(int(msg[0])):
             if ispay2[0] == 'no':
