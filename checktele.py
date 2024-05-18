@@ -375,7 +375,7 @@ async def _(event):
                 elif "off" in isclaim:
                     await event.edit("لايوجد صيد شغال !")
                 else:
-                    await event.edit("خطأ")
+                    
             else:
                 pass
         for i in range(int(msg[0])):
